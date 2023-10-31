@@ -22,7 +22,7 @@
 
                     <div class="bg-white w-1/2 p-5 shadow-lg">
                         <h2>Bienvenido</h2>
-                        <p>Selecciona la accion que quieras realizar en las pestañas del menu de la izquierda</p>
+                        <p>Selecciona la accion que quieras realizar en el menu</p>
                     </div>
 
                 </section>

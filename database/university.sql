@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost:3306
--- Tiempo de generación: 31-10-2023 a las 19:00:53
+-- Tiempo de generación: 31-10-2023 a las 20:10:21
 -- Versión del servidor: 10.4.28-MariaDB
 -- Versión de PHP: 8.2.4
 
@@ -38,12 +38,12 @@ CREATE TABLE `clases` (
 --
 
 INSERT INTO `clases` (`id`, `name`, `instructor_id`) VALUES
-(33, 'Desarrollo Movil', 16),
-(34, 'Fisica 1', 17),
-(35, 'Matemática 1 1', 17),
-(36, 'Bases de datos', 18),
-(37, 'Desarrollo Backend', 16),
-(38, 'Desarrollo Frontend', 19);
+(33, 'Desarrollo Movil', 21),
+(34, 'Fisica 1', 21),
+(35, 'Matemática 1', 21),
+(36, 'Bases de datos', 20),
+(37, 'Desarrollo Backend', 20),
+(38, 'Desarrollo Frontend', 20);
 
 -- --------------------------------------------------------
 
@@ -61,10 +61,9 @@ CREATE TABLE `instructor` (
 --
 
 INSERT INTO `instructor` (`id`, `user_id`) VALUES
-(16, 41),
-(17, 42),
-(18, 45),
-(19, 46);
+(20, 52),
+(21, 53),
+(22, 54);
 
 -- --------------------------------------------------------
 
@@ -106,7 +105,10 @@ CREATE TABLE `student` (
 INSERT INTO `student` (`id`, `dni`, `user_id`) VALUES
 (26, 45124789, 47),
 (27, 46781038, 48),
-(28, 42586490, 49);
+(28, 42586490, 49),
+(29, 41490348, 50),
+(30, 45842961, 51),
+(31, 48976215, 55);
 
 -- --------------------------------------------------------
 
@@ -151,11 +153,12 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `email`, `password`, `firstname`, `lastname`, `address`, `birthday`, `role_id`) VALUES
-(3, 'admin@gmail.com', '$2y$10$K6XoXaChkpTCSW6R9quOPelrEaZ2gRkE3xusBW33TEunmvXonLtIu', 'Pool', 'Ramos', 'Ayacucho', '1995-10-15 21:39:29', 1),
-(41, 'usuario1@gmail.com', '$2y$10$iQFgXDemdYsye8ZkCaSHbOEUWVbDfWp69qhabVV44TevgRQNVATye', 'Pablo', 'Marmol', 'Lima', '1998-01-01 09:00:00', 2),
-(42, 'usuario2@gmail.com', '$2y$10$7bkOOPIU1gg/7oQEbHF49uulebFC5hClvm/qvK.t4nkKu14WgiIuW', 'Pedro', 'Picapiedra', 'Huancayo', '1991-01-01 09:00:00', 2),
-(45, 'usuario3@gmail.com', '$2y$10$2/aiwY5hhJ/nLEcmOPjrte/HfcYzW0WTIrQY2arjSVTy4j3d/VY3C', 'Luis', 'Diaz', 'Pasco', '1994-01-05 09:00:00', 3),
-(46, 'usuario4@gmail.com', '$2y$10$UvK0yr76UFMyn1UFPqvLGe0.h/fr/EeZkRqlu42l8.XiBUYYyMyKa', 'Tomas', 'Arias', 'Loreto', '1996-01-01 09:00:00', 3);
+(50, 'miguel@gmail.com', '$2y$10$iFzzKnNqYHLcARz.CsfwmuOCWVqyOjPcMX2LwKT4l7QeAhlIDkUEa', 'Miguel', 'Campos', 'Jr. Los Andes 350', '2023-10-31 18:57:44', 3),
+(51, 'admin@gmail.com', '$2y$10$YN.MwQu3GdBO4KTHUUDZC.FryJf9Ksii.XUaiXsFx9LlWpxMnIDOS', 'Pool', 'Ramos', 'Jr. Lima 120', '2023-10-31 18:52:51', 1),
+(52, 'maestro@gmail.com', '$2y$10$OyncM0V3TExN5k3YghT.Cu13jOK/egce4mRqCSq9kaZMFQJpVuI4O', 'Joel', 'Prado', 'Jr. Ica 280', '1985-06-06 05:00:00', 2),
+(53, 'antonio@gmail.com', '$2y$10$vcBLASOWRvO/cVIORJDFje6kitgFfVNFoc5qCDlYJim.ExksFjL0u', 'Antonio', 'Lopez', 'Jr. Junin 360', '1989-03-28 05:00:00', 2),
+(54, 'cesar@gmail.com', '$2y$10$aXd7gcYtPfPs.etzM/Rswue90dfhCHYV2xCuMLqrwCWbJqdBwSoYG', 'Cesar', 'Saenz', 'Jr. Bolivia 450', '1993-08-18 05:00:00', 2),
+(55, 'jaime@gmail.com', '$2y$10$8USeGlwDcWi7CzT.X4jjjO.KZg8YRSRqGL3wEY5/Zh6iLEvbBI0Se', 'Jaime', 'Ochoa', 'Jr. Paraguay 120', '2002-07-17 05:00:00', 3);
 
 --
 -- Índices para tablas volcadas
@@ -217,7 +220,7 @@ ALTER TABLE `clases`
 -- AUTO_INCREMENT de la tabla `instructor`
 --
 ALTER TABLE `instructor`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT de la tabla `roles`
@@ -229,7 +232,7 @@ ALTER TABLE `roles`
 -- AUTO_INCREMENT de la tabla `student`
 --
 ALTER TABLE `student`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 
 --
 -- AUTO_INCREMENT de la tabla `studet_clases`
@@ -241,7 +244,7 @@ ALTER TABLE `studet_clases`
 -- AUTO_INCREMENT de la tabla `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
 
 --
 -- Restricciones para tablas volcadas

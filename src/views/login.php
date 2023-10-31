@@ -37,7 +37,7 @@
                     <input type="hidden" name="action" value="login">
 
                     <div class="flex justify-end">
-                        <button class="bg-blue-500 text-white rounded-md p-2">Ingresar</button>
+                        <button class="bg-blue-500 text-white rounded-md p-2   ">Ingresar</button>
                     </div>
 
                 </form>

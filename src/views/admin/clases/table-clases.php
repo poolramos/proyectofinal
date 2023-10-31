@@ -15,7 +15,7 @@
                         <h1 class="text-3xl">Lista de Clases</h1>
 
                         <div>
-                            <a class="text-blue-500" href="/index.php">Home</a> / Clasesz
+                            <a class="text-blue-500" href="/index.php">Home</a> / Clases
                         </div>
                     </div>
 

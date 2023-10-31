@@ -9,7 +9,6 @@
 </div>
 
 <div class="py-6  flex flex-col px-4">
-    <span>admin</span>
     <span>Administrador</span>
 </div>
 
