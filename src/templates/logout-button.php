@@ -1,0 +1,1 @@
+<a href="/index?action=logout" class="text-red-500">Logout</a>
