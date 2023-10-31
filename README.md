@@ -7,7 +7,7 @@ usuario: miguel@gmail.com
 contraseña: miguel
 
 usuario: maestro@gmail.com
-contraseña: maestro@gmail.com
+contraseña: maestro
 
 usuario: antonio@gmail.com
 contraseña: antonio
